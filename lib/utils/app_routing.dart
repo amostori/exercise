@@ -23,10 +23,8 @@ final routeByName = GoRouter(
               path: 'detail/:weight',
               name: AppRoute.detail.name,
               builder: (context, state) {
-                final weightId = state.pathParameters['weight']!;
-                return DetailsScreen(
-                  weight: int.parse(weightId),
-                );
+                final weight = state.pathParameters['weight']!;
+                return DetailsScreen(int.parse(weight));
               },
             )
           ]),

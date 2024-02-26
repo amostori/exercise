@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class FlipBookPainter extends CustomPainter {
-  FlipBookPainter({super.repaint, required this.offsets});
+class MyPainter extends CustomPainter {
+  MyPainter({super.repaint, required this.offsets});
 
   final List<Offset?> offsets;
   @override
