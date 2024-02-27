@@ -22,12 +22,14 @@ class MyMan extends StateNotifier<Man> {
   final int weight;
 
   void showMan() {
+    print('weight = $weight');
     state = state.copyWith(
       breathing: setBreathing(weight),
       pulse: setPulse(weight),
       mask: setMaska(weight),
       tube: setTube(weight),
     );
+    print('state.mask = ${state.mask}');
   }
 
   String setBreathing(int weight) {

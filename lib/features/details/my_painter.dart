@@ -9,7 +9,7 @@ class MyPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.deepPurple
+      ..color = Colors.black
       ..isAntiAlias = true
       ..strokeWidth = 3.0;
     for (var i = 0; i < offsets.length - 1; i++) {
